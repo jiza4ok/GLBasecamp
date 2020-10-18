@@ -1,0 +1,12 @@
+---
+# tasks file for defining_variable
+- name: Define content of issue as variable
+  shell: cat /etc/issue
+  register: results
+
+- set_fact: message="Issue variable is -->  {{ results.stdout }} <--  and hostname {{ ansible_hostname }}"
+
+- debug:
+    var: message
+
+

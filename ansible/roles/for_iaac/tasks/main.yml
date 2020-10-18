@@ -1,0 +1,9 @@
+---
+# tasks file for for_iaas
+- name: Create file
+  file:
+    dest : /etc/iaac
+    state: touch
+    mode : 0500
+
+
