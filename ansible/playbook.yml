@@ -6,7 +6,6 @@
   roles:
     - for_iaac
    
----
 - name: Define content as variable and printing hostnames
   hosts: all
   become: yes
