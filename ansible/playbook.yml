@@ -1,7 +1,16 @@
 ---
+- name: Create file with root (read and execute) rights
+  hosts: iaac
+  become: yes
+
+  roles:
+    - for_iaac
+   
+---
 - name: Define content as variable and printing hostnames
   hosts: all
   become: yes
   
   roles:
     - defining_variable
+

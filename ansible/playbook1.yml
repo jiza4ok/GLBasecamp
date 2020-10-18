@@ -1,8 +1,0 @@
----
-- name: Create file with root (read and execute) rights
-  hosts: iaac
-  become: yes
-
-  roles:
-    - for_iaac
-   
